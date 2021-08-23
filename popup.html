@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Listas de Tareas</h1>
+      <form class="form" autocomplete="off">
+        <input type="text" id="input" placeholder="Escribe la tarea" autofocus />
+        <button type="submit" class="button primary">
+          Crea una Nueva Tarea
+        </button>
+      </form>
+      <!--Task Automa-->
+      <div class="task-container"></div>
+    </div>
+
+    <template class="template">
+      <div class="tasks-card warning">
+        <p>Nueva Tarea</p>
+        <div class="task__buttons">
+          <h3><i class="fas fa-check-circle green"></i></h3>
+          <h3><i class="fas fa-minus-circle danger"></i></h3>
+        </div>
+      </div>
+    </template>
+    <script src="popup.js"></script>
+  </body>
+</html>
